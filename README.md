@@ -35,16 +35,17 @@ pip install -r requirements.txt
 ```
 
 ```python
-import requests
-import sqlite3
-from textblob import TextBlob
+import os
+import glob
+import csv
+from netCDF4 import Dataset
 ```
 
 ## How to run
 
 ```python
-API_KEY = 'Your API key here'
-BASE_URL = 'https://newsapi.org/v2/top-headlines'
+input_directory = './DrifterDATA'
+output_file = 'DATA.csv'
 
-get_news(API_KEY)
+process_netcdf_files(input_directory, output_file)
 ```
