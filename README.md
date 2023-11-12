@@ -25,7 +25,7 @@ Extract metadata from driftViewer software output NetCDF's
 # Requirements
 
 ```bash
-pip install requests textblob
+pip install netCDF4
 ```
 
 or
